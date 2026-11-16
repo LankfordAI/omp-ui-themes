@@ -1,0 +1,18 @@
+{
+  "format": "omp-ui-theme-index",
+  "version": 1,
+  "themes": [
+    {
+      "path": "themes/dusk.json",
+      "label": "Dusk",
+      "seeds": { "canvas": "#1a1b26", "ink": "#c0caf5", "accents": { "signal": "#9ece6a" } },
+      "backdrop": "scene"
+    },
+    {
+      "path": "themes/paper.json",
+      "label": "Paper",
+      "seeds": { "canvas": "#f6f3ea" },
+      "backdrop": null
+    }
+  ]
+}

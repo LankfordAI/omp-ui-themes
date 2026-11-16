@@ -1,0 +1,6 @@
+{
+  "format": "omp-ui-theme",
+  "version": 1,
+  "label": "Paper",
+  "seeds": { "canvas": "#f6f3ea" }
+}
