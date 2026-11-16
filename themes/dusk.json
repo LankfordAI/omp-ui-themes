@@ -2,6 +2,6 @@
   "format": "omp-ui-theme",
   "version": 1,
   "label": "Dusk",
-  "seeds": { "canvas": "#1a1b26", "ink": "#c0caf5", "accents": { "signal": "#9ece6a" } },
+  "seeds": { "canvas": "#16161e", "ink": "#c0caf5", "accents": { "signal": "#9ece6a" } },
   "backdrop": { "mime": "image/svg+xml", "data": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIj48c3R5bGU+QGtleWZyYW1lcyBkcmlmdHtmcm9te3RyYW5zZm9ybTp0cmFuc2xhdGVYKDApfXRve3RyYW5zZm9ybTp0cmFuc2xhdGVYKDQwcHgpfX1jaXJjbGV7YW5pbWF0aW9uOmRyaWZ0IDhzIGVhc2UtaW4tb3V0IGluZmluaXRlIGFsdGVybmF0ZX08L3N0eWxlPjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjMWExYjI2Ii8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzdhYTJmNyIgb3BhY2l0eT0iMC4zNSIvPjxjaXJjbGUgY3g9IjI2MCIgY3k9IjExMCIgcj0iNjAiIGZpbGw9IiM5ZWNlNmEiIG9wYWNpdHk9IjAuMjUiLz48L3N2Zz4K", "dim": 40, "blur": 12 }
 }
