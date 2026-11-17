@@ -1,0 +1,46 @@
+name: check
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the base branch (its tool is the checker)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+          persist-credentials: false
+      - name: Check out the pull request merge commit
+        uses: actions/checkout@v4
+        with:
+          path: pr
+          fetch-depth: 2
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Leave generated and maintainer files alone
+        working-directory: pr
+        env:
+          ASSOCIATION: ${{ github.event.pull_request.author_association }}
+        run: |
+          fail=0
+          while IFS= read -r path; do
+            case "$path" in
+              omp-ui-themes.json|omp-ui-themes.v2.json)
+                echo "::error file=$path::the index workflow writes this file after merge; do not edit it in a pull request"
+                fail=1 ;;
+              tools/*|.github/*|LICENSE|LICENSE-CODE)
+                case "$ASSOCIATION" in
+                  OWNER|MEMBER|COLLABORATOR) ;;
+                  *) echo "::error file=$path::only maintainers change this file"; fail=1 ;;
+                esac ;;
+            esac
+          done < <(git diff --name-only HEAD^1 HEAD)
+          exit "$fail"
+      - name: Check the repository against the standard
+        run: node base/tools/omp-ui-theme-tool.mjs check pr

@@ -1,0 +1,38 @@
+name: index
+on:
+  push:
+    branches: [main]
+    paths:
+      - "themes/**"
+      - "tags.json"
+      - "featured.json"
+      - "tools/**"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: index
+  cancel-in-progress: false
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generate both indexes
+        run: node tools/omp-ui-theme-tool.mjs generate .
+      - name: Commit the indexes when they changed
+        run: |
+          if git diff --quiet -- omp-ui-themes.json omp-ui-themes.v2.json; then
+            echo "indexes are up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add omp-ui-themes.json omp-ui-themes.v2.json
+          git commit -m "Regenerate the theme indexes"
+          git push origin HEAD:main

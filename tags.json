@@ -1,0 +1,70 @@
+{
+  "format": "omp-ui-theme-tags",
+  "version": 1,
+  "tags": [
+    {
+      "id": "abstract",
+      "description": "Shapes, patterns, or fields of colour rather than a depicted place or thing."
+    },
+    {
+      "id": "city",
+      "description": "Streets, skylines, or other built places."
+    },
+    {
+      "id": "cool",
+      "description": "Blues, greens, and violets lead the palette."
+    },
+    {
+      "id": "cozy",
+      "description": "Soft, warm, and low-key; made for long evening sessions."
+    },
+    {
+      "id": "high-contrast",
+      "description": "Text and accents sit well above the contrast minimum."
+    },
+    {
+      "id": "landscape",
+      "description": "A depicted outdoor scene: mountains, fields, coasts, or sky."
+    },
+    {
+      "id": "minimal",
+      "description": "Few colours and little or no backdrop."
+    },
+    {
+      "id": "monochrome",
+      "description": "One hue, or greys, across the palette."
+    },
+    {
+      "id": "nature",
+      "description": "Plants, water, weather, or wildlife."
+    },
+    {
+      "id": "pastel",
+      "description": "Light, muted colours with low saturation."
+    },
+    {
+      "id": "pixel-art",
+      "description": "A backdrop drawn as pixel art."
+    },
+    {
+      "id": "port",
+      "description": "Adapted from an existing editor or terminal theme."
+    },
+    {
+      "id": "retro",
+      "description": "Evokes older computers, consoles, or print."
+    },
+    {
+      "id": "seasonal",
+      "description": "Tied to a season or time of year."
+    },
+    {
+      "id": "space",
+      "description": "Stars, planets, or the night sky beyond it."
+    },
+    {
+      "id": "warm",
+      "description": "Reds, oranges, and yellows lead the palette."
+    }
+  ]
+}

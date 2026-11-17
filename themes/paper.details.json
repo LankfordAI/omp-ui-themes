@@ -1,0 +1,10 @@
+{
+  "format": "omp-ui-theme-details",
+  "version": 1,
+  "tags": [
+    "minimal",
+    "warm"
+  ],
+  "description": "A plain cream canvas with no backdrop.",
+  "author": "AustinM731"
+}

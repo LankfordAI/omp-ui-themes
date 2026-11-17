@@ -1,0 +1,9 @@
+{
+  "format": "omp-ui-theme-featured",
+  "version": 1,
+  "paths": [
+    "themes/sakura-fuji-dark.json",
+    "themes/sakura-fuji-light.json",
+    "themes/autumn-ridge-pixel.json"
+  ]
+}
