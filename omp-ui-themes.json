@@ -23,7 +23,8 @@
           "property": "#a8c0e8"
         }
       },
-      "backdrop": "scene"
+      "backdrop": "scene",
+      "name": "undefined x"
     },
     {
       "path": "themes/sakura-fuji-light.json",
