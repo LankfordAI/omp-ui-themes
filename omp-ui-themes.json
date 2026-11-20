@@ -112,7 +112,7 @@
           "property": "#b8d0f5"
         }
       },
-      "backdrop": null
+      "backdrop": "scene"
     }
   ]
 }
