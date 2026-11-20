@@ -7,6 +7,10 @@
       "description": "Shapes, patterns, or fields of colour rather than a depicted place or thing."
     },
     {
+      "id": "animated",
+      "description": "The backdrop moves: drifting snow, swaying trees, or other calm looping motion."
+    },
+    {
       "id": "city",
       "description": "Streets, skylines, or other built places."
     },
