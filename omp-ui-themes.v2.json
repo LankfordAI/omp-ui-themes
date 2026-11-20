@@ -207,6 +207,39 @@
       "author": "AustinM731",
       "added": "2026-11-20",
       "featured": false
+    },
+    {
+      "path": "themes/cindersap-forest-4k-stardew.json",
+      "label": "Cindersap Forest 4K (Stardew)",
+      "seeds": {
+        "canvas": "#18201a",
+        "ink": "#ece6d2",
+        "accents": {
+          "signal": "#7cc456",
+          "copper": "#e8b84b",
+          "rose": "#e2557a",
+          "iris": "#a98ae8"
+        },
+        "syntax": {
+          "comment": "#8a9a7c",
+          "string": "#e8a86c",
+          "constant": "#f2cc52",
+          "function": "#7cc4e8",
+          "type": "#b994f0",
+          "property": "#a6d06a"
+        }
+      },
+      "backdrop": "scene",
+      "tags": [
+        "pixel-art",
+        "landscape",
+        "nature",
+        "cozy"
+      ],
+      "description": "An animated pixel-art Cindersap Forest from Stardew Valley with Junimos at a Junimo hut.",
+      "author": "AustinM731",
+      "added": "2026-11-20",
+      "featured": false
     }
   ]
 }
