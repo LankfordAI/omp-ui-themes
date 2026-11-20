@@ -1,4 +1,4 @@
-// omp-ui theme repository tool. Built from LankfordAI/omp-ui 0.36.1 (65f0b7eb). Do not edit.
+// omp-ui theme repository tool. Built from LankfordAI/omp-ui 0.38.1 (22291fbb). Do not edit.
 
 // packages/core/src/theme-repository-cli.ts
 import { readFile, readdir, writeFile } from "node:fs/promises";
@@ -14,7 +14,7 @@ function isObject(value) {
 
 // packages/core/src/theme-backdrop.ts
 var BACKDROP_IMAGE_BYTES_MAX = 4 * 1024 * 1024;
-var BACKDROP_SCENE_BYTES_MAX = 128 * 1024;
+var BACKDROP_SCENE_BYTES_MAX = 4 * 1024 * 1024;
 var BACKDROP_BLUR_MAX = 32;
 var LEGACY_DIM_KEY = "dim";
 function sniffBackdropMime(bytes) {
@@ -37,7 +37,7 @@ function checkBackdropBytes(bytes) {
     if (bytes.length > BACKDROP_IMAGE_BYTES_MAX) return { ok: false, message: "image backdrops can be at most 4 MiB" };
     return { ok: true, kind: "image", mime };
   }
-  if (bytes.length > BACKDROP_SCENE_BYTES_MAX) return { ok: false, message: "scene backdrops can be at most 128 KiB" };
+  if (bytes.length > BACKDROP_SCENE_BYTES_MAX) return { ok: false, message: "scene backdrops can be at most 4 MiB" };
   const text = new TextDecoder().decode(bytes);
   if (SCENE_ACTIVE.test(text)) {
     return { ok: false, message: "scenes cannot contain script, foreignObject or SMIL animation" };
