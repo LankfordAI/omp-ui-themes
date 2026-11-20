@@ -139,6 +139,40 @@
       "author": "AustinM731",
       "added": "2026-11-17",
       "featured": false
+    },
+    {
+      "path": "themes/christmas-village-pixel.json",
+      "label": "Christmas Village (Pixel)",
+      "seeds": {
+        "canvas": "#101724",
+        "ink": "#edf3fb",
+        "accents": {
+          "signal": "#4ee08e",
+          "copper": "#f3be6b",
+          "rose": "#f06e7a",
+          "iris": "#9db4fa"
+        },
+        "syntax": {
+          "comment": "#6c7f99",
+          "string": "#f2c57c",
+          "constant": "#f296a2",
+          "function": "#7ec8f2",
+          "type": "#6ee0b8",
+          "property": "#b8d0f5"
+        }
+      },
+      "backdrop": null,
+      "tags": [
+        "pixel-art",
+        "cozy",
+        "seasonal",
+        "city",
+        "warm"
+      ],
+      "description": "A cozy pixel-art Christmas village at night, with warm amber and evergreen accents over a deep twilight blue.",
+      "author": "AustinM731",
+      "added": "2026-11-20",
+      "featured": false
     }
   ]
 }
