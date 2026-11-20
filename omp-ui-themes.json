@@ -92,6 +92,29 @@
       "backdrop": null
     },
     {
+      "path": "themes/autumn-ridge-4k-pixel.json",
+      "label": "Autumn Ridge 4K (Pixel)",
+      "seeds": {
+        "canvas": "#1b1726",
+        "ink": "#f3e7d7",
+        "accents": {
+          "signal": "#82b46a",
+          "copper": "#f2a54a",
+          "rose": "#e8694e",
+          "iris": "#ab9cdb"
+        },
+        "syntax": {
+          "comment": "#8c82aa",
+          "string": "#f2c46a",
+          "constant": "#ef8a4c",
+          "function": "#a2c97e",
+          "type": "#b8aae4",
+          "property": "#e3b892"
+        }
+      },
+      "backdrop": "scene"
+    },
+    {
       "path": "themes/christmas-village-pixel.json",
       "label": "Christmas Village (Pixel)",
       "seeds": {
